@@ -21,7 +21,7 @@ export const ContactForm = ({ handleSubmit }) => {
         />
       </InputWrapper>
       <InputWrapper>
-        <Label>Number</Label>
+        <Label>umber</Label>
         <Input
           type="tel"
           name="number"
