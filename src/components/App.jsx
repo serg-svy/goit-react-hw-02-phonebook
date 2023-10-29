@@ -12,27 +12,28 @@ export class App extends Component {
 
   addContact = e => {
     e.preventDefault();
-    const nameInput = e.target.elements.name;
-    const numberInput = e.target.elements.number;
+    const nameInput = e.target.elements.name.value;
+    const numberInput = e.target.elements.number.value;
 
-    const contact = [
-      {
-        name: nameInput.value,
-        number: numberInput.value,
-        id: nanoid(),
-      },
-    ];
+    const isContactExist = this.state.contacts.some(
+      contact => contact.name.toLowerCase() === nameInput.toLowerCase()
+    );
 
-    if (this.state.contacts.find(contact => contact.name === nameInput)) {
+    if (isContactExist) {
       alert(`${nameInput} is already in contacts`);
     } else {
+      const contact = {
+        name: nameInput,
+        number: numberInput,
+        id: nanoid(),
+      };
+
       this.setState(state => {
-        return { contacts: [...state.contacts, ...contact] };
+        return { contacts: [...state.contacts, contact] };
       });
     }
 
-    nameInput.value = '';
-    numberInput.value = '';
+    e.target.reset();
   };
 
   removeContact = e => {
