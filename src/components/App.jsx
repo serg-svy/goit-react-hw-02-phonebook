@@ -38,12 +38,12 @@ export class App extends Component {
 
   removeContact = e => {
     if (e.target.nodeName === 'BUTTON') {
-      const contactName = e.currentTarget.getAttribute('name');
-      return this.setState({
-        contacts: this.state.contacts.filter(
-          contact => contact.name !== contactName
+      const contactId = e.currentTarget.getAttribute('data-id');
+      return this.setState(prevState => ({
+        contacts: prevState.contacts.filter(
+          contact => contact.id !== contactId
         ),
-      });
+      }));
     }
   };
 
