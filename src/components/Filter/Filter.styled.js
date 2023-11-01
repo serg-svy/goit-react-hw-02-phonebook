@@ -23,8 +23,8 @@ export const FilterInput = styled.input`
   font-size: 16px;
   font-weight: 400;
   border-radius: 5px;
-  outline: rgb(255, 217, 25);
-  border: 2px rgb(255, 217, 25) solid;
+  outline: rgb(25, 168, 1255);
+  border: 2px rgb(25, 168, 125) solid;
   padding: 0 8px 0 8px;
   margin-bottom: 10px;
 `;

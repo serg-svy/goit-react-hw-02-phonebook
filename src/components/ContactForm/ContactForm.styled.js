@@ -19,8 +19,8 @@ export const ContactName = styled.input`
   font-size: 16px;
   font-weight: 400;
   border-radius: 5px;
-  outline: rgb(255, 217, 25);
-  border: 2px rgb(255, 217, 25) solid;
+  outline: rgb(25, 168, 125);
+  border: 2px rgb(25, 168, 125) solid;
   padding: 0 8px 0 8px;
   margin-bottom: 5px;
 `;
@@ -31,8 +31,8 @@ export const ContactNumber = styled.input`
   font-size: 16px;
   font-weight: 400;
   border-radius: 5px;
-  outline: rgb(255, 217, 25);
-  border: 2px rgb(255, 217, 25) solid;
+  outline: rgb(25, 168, 125);
+  border: 2px rgb(25, 168, 125) solid;
   padding: 0 8px 0 8px;
   margin-bottom: 15px;
 `;
@@ -42,8 +42,8 @@ export const BtnAdd = styled.button`
   font-weight: 700;
   width: 320px;
   height: 60px;
-  background-color: rgb(255, 221, 51);
-  border: 2px rgb(255, 187, 51) solid;
+  background-color: rgb(25, 168, 125);
+  border: 2px rgb(25, 168, 125) solid;
   border-radius: 5px;
   cursor: pointer;
   margin-right: auto;
@@ -51,6 +51,6 @@ export const BtnAdd = styled.button`
   margin-bottom: 15px;
   &:hover,
   &:focus {
-    background-color: rgb(255, 128, 0);
+    background-color: rgb(25, 168, 125);
   }
 `;

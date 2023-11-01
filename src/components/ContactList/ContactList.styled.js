@@ -35,8 +35,8 @@ export const BtnDelete = styled.button`
   height: 30px;
   border-radius: 50%;
 
-  background-color: rgb(255, 221, 51);
-  border: 2px rgb(255, 187, 51) solid;
+  background-color: rgb(25, 168, 125);
+  border: 2px rgb(25, 168, 125) solid;
   cursor: pointer;
   padding: 4px;
   .icon {
@@ -45,6 +45,6 @@ export const BtnDelete = styled.button`
   }
   &:hover,
   &:focus {
-    background-color: rgb(255, 128, 0);
+    background-color: rgb(25, 168, 125);
   }
 `;
