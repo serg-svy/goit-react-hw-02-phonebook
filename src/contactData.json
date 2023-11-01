@@ -1,6 +1,6 @@
 [
-  { "id": "id-1", "name": "Rosie Simpson", "number": "459-12-56" },
-  { "id": "id-2", "name": "Hermione Kline", "number": "443-89-12" },
-  { "id": "id-3", "name": "Eden Clements", "number": "645-17-79" },
-  { "id": "id-4", "name": "Annie Copeland", "number": "227-91-26" }
+  { "id": "id-1", "name": "John Smith", "number": "+1 (555) 123-4567" },
+  { "id": "id-2", "name": "Sarah Johnson", "number": "+1 (555) 987-6543" },
+  { "id": "id-3", "name": "Michael Davis", "number": "+1 (555) 234-5678" },
+  { "id": "id-4", "name": "David Brown", "number": "+1 (555) 345-6789" }
 ]
