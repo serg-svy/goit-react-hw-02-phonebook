@@ -12,6 +12,7 @@ export const ContactList = ({ contacts, filterState, handleBtnClick }) => {
       name={name}
       number={number}
       handleRemoval={handleBtnClick}
+      id={id}
     />
   );
 

@@ -36,15 +36,10 @@ export class App extends Component {
     e.target.reset();
   };
 
-  removeContact = e => {
-    if (e.target.nodeName === 'BUTTON') {
-      const contactId = e.currentTarget.getAttribute('data-id');
-      return this.setState(prevState => ({
-        contacts: prevState.contacts.filter(
-          contact => contact.id !== contactId
-        ),
-      }));
-    }
+  removeContact = id => {
+    this.setState({
+      contacts: this.state.contacts.filter(contact => contact.id !== id),
+    });
   };
 
   handleFilterInput = e => {

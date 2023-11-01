@@ -5,7 +5,9 @@ export const ContactItem = ({ name, number, handleRemoval }) => {
   return (
     <li onClick={handleRemoval} name={name} style={{ marginBottom: 10 }}>
       {name}: {number}
-      <DeleteBtn type="button">Delete</DeleteBtn>
+      <DeleteBtn type="button" onClick={() => handleRemoval(id)}>
+        Delete
+      </DeleteBtn>
     </li>
   );
 };
