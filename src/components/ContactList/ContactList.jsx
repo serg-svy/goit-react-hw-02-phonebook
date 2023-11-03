@@ -15,7 +15,7 @@ export function ContactList({ contacts, deleteContact }) {
     <Wrap>
       {contacts.map(({ name, number, id }) => {
         return (
-          <ContactWrap id={id} key={nanoid()}>
+          <ContactWrap id={id} key={id}>
             <ContacNsme>{name}</ContacNsme>
             <ContacNumber>{number}</ContacNumber>
             <BtnDelete type="button" onClick={() => deleteContact(id)}>

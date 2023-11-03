@@ -11,9 +11,8 @@ export default class App extends Component {
     filter: '',
   };
   onAddContact = newContact => {
-    console.log(newContact);
     const hasNameContact = this.state.contacts.some(
-      contact => contact.name === newContact.name
+      contact => contact.name.toLowerCase() === newContact.name.toLowerCase()
     );
 
     if (hasNameContact) {
