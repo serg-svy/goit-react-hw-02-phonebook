@@ -1,6 +1,5 @@
 import React from 'react';
 import { HiOutlineTrash } from 'react-icons/hi';
-import { nanoid } from 'nanoid';
 
 import {
   Wrap,
